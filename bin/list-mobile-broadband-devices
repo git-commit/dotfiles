@@ -1,0 +1,1 @@
+for n in `ls /sys/class/*/*{ACM,wdm,usb0}*/device/interface`;do echo $(echo $n|awk -F '/' '{print $5}') : $(cat $n);done

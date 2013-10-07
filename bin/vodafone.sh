@@ -1,0 +1,19 @@
+#!/bin/bash
+if [ -z "$1" ]
+then
+  echo "Not enough parameters."
+else
+  case "$1" in
+  start)
+    sudo netctl start vdf ;;
+  stop)
+    sudo netctl stop vdf ;;
+  status)
+    netctl status vdf ;;
+  restart)
+      sudo netctl stop vdf
+      sleep 5
+      sudo netctl start vdf ;;
+  *) echo "valid parameters are: start, stop, restart and status" ;;
+  esac
+fi
