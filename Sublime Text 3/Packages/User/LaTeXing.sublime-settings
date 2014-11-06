@@ -1,0 +1,11 @@
+{
+	"output_directory": false,
+    "quick_build": [
+        {
+            "name": "Primary: pdflatex + biber + pdflatex (2x)",
+            "primary": true,
+            "cmds": ["pdflatex", "biber", "pdflatex", "pdflatex"]
+        },
+],
+
+}
