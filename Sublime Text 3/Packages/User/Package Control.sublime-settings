@@ -1,9 +1,4 @@
 {
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2"
-	],
 	"installed_packages":
 	[
 		"All Autocomplete",
