@@ -16,5 +16,11 @@ alias dmesg="dmesg --color"
 alias pacrm="sudo pacman -Rnss"
 alias arduino="sudo stty -F /dev/ttyUSB0 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts"
 
+alias dstatus="dropbox-cli status"
+
+#python virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
+
 #Archey
 archey
