@@ -1,6 +1,6 @@
 {
 	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
-	"dictionary": "Packages/User/de_DE_frami.dic",
+	"dictionary": "Packages/Dictionaries/German.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[

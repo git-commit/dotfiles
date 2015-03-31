@@ -1,12 +1,12 @@
 {
 	"installed_packages":
 	[
-		"All Autocomplete",
 		"Anaconda",
 		"AutoHotkey",
+		"Dictionaries",
 		"Gist",
-		"GitGutter",
 		"Gitignore",
+		"Gradle_Language",
 		"LaTeXTools",
 		"Package Control",
 		"SideBarEnhancements",
