@@ -101,3 +101,30 @@ set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
 set laststatus=2
 set termencoding=utf-8
 set term=xterm-256color
+
+" Mode switching
+imap jj <Esc>
+" Can be typed even faster than jj.
+:imap jk <Esc>
+" Press i to enter insert mode, and ii to exit.
+:imap ii <Esc>
+" Press Shift-Space (may not work on your system).
+":imap <S-Space> <Esc>
+" Try the following so Shift-Space also enters insert mode.
+":nmap <S-Space> i
+" Or just Space to enter insert mode.
+":nmap <Space> i
+" In Mac OS X, mapping <S-space> does not work, but the following
+" is better (press the "apple" key and the space key).
+" Note that this will conflict with the spotlight shortcut
+":imap <D-space> <Esc>
+" On gvim and Linux console Vim, you can use Alt-Space.
+":imap <M-Space> <Esc>
+
+" Unbind the cursor keys in insert, normal and visual modes.
+for prefix in ['i', 'n', 'v']
+  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+    exe prefix . "noremap " . key . " <Nop>"
+  endfor
+endfor
+
