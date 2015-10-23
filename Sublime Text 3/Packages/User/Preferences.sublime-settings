@@ -1,6 +1,7 @@
 {
-	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night-Eighties.tmTheme",
 	"dictionary": "Packages/Dictionaries/German.dic",
+	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -30,8 +31,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"SideBarEnhancements",
 		"All Autocomplete",
+		"SideBarEnhancements",
 		"Vintage"
 	],
 	"line_padding_bottom": 0,
@@ -39,7 +40,7 @@
 	"show_encoding": true,
 	"show_full_path": true,
 	"tab_size": 4,
-	"theme": "Soda Dark 3.sublime-theme",
+	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }

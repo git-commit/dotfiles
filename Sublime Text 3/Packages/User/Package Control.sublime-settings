@@ -1,17 +1,19 @@
 {
+	"bootstrapped": true,
 	"installed_packages":
 	[
 		"Anaconda",
-		"AutoHotkey",
 		"Dictionaries",
 		"Gist",
 		"Gitignore",
 		"Gradle_Language",
 		"LaTeXTools",
 		"Package Control",
+		"Rust",
 		"SideBarEnhancements",
 		"SideBarGit",
 		"Theme - Soda",
+		"Theme - Spacegray",
 		"Thesaurus",
 		"Tomorrow Color Schemes"
 	]
