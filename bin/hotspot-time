@@ -1,0 +1,14 @@
+#!/bin/python3
+
+import requests
+from bs4 import BeautifulSoup
+
+page = requests.get('https://service.thecloud.net/service-platform/splash/')
+soup = BeautifulSoup(page.text)
+time_remaining = soup.find(id="timeRemaining")
+
+text = time_remaining.text
+index = text.find(":")
+
+time = text[index-2:index+3]
+print(time)

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+qemu-kvm -soundhw es1370 -net nic -net user -cdrom ${@:-out/target/product/eeepc/eeepc.iso}

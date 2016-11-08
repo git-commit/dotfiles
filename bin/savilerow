@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd $HOME/Programs/savilerow-1.6.3-linux
+
+./savilerow "$@"
