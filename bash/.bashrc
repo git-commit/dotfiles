@@ -54,11 +54,7 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 
 #Some specific scripts
-source $DOTFILES_REPO_PATH/bash/vtefix.sh
 source $HOME/.bashrc_private
-
-source /usr/share/git/git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="$purple\u$green\$(__git_ps1)\$blue \W $ $reset"
-export PROMPT_COMMAND='__git_ps1 "max@vostro:\w" "\\\$ "'
+source $DOTFILES_REPO_PATH/bash/git-prompt.sh
+source $DOTFILES_REPO_PATH/bash/vtefix.sh
 
