@@ -76,6 +76,8 @@ set number
 "keybindings
 set pastetoggle=<F10> "toggles automatic indentation and commenting
 map <F2> :NERDTreeToggle<CR>
+"Remove all trailing whitespace by pressing F5
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
