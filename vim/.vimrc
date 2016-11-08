@@ -60,6 +60,7 @@ set mat=2
 set noerrorbells
 set novisualbell
 set t_vb=
+set noeb vb t_vb=
 
 "Timeout
 set timeoutlen=500
@@ -97,6 +98,7 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'scrooloose/nerdtree'
 "Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'keith/swift.vim'
 
 " Powerline setup
 set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
