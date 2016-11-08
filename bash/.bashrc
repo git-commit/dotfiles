@@ -1,9 +1,15 @@
-export PATH=$PATH:/home/snowdragon/.dotfiles/bin/:/home/snowdragon/Programs/shell/:/home/snowdragon/.gem/ruby/2.2.0/bin
+export PATH=$PATH:/home/snowdragon/.dotfiles/bin/:/home/snowdragon/Programs/shell/:/home/snowdragon/.gem/ruby/2.2.0/bin:/home/snowdragon/.local/bin/:/home/snowdragon/.gem/ruby/2.3.0/bin
 export EDITOR="vim"
 export VISUAL="vim"
+export BROWSER="chromium"
 export JAVA_HOME="/usr/lib/jvm/default"
 export M2_HOME=/opt/maven/
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
+
+if [ -n "$DESKTOP_SESSION" ];then
+    eval $(gnome-keyring-daemon --start)
+    export SSH_AUTH_SOCK
+fi
 
 #Aliases
 alias updatesystem='sudo pacman -Syu && yaourt -Syua'
@@ -32,7 +38,7 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/bin/virtualenvwrapper.sh
 
 #Archey
-archey
+#archey
 
 # Use npm without sudo
 # https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
