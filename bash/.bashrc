@@ -23,14 +23,17 @@ alias packetsize="expac '%m\t%n' | sort -h"
 alias packetsize2="expac '%n %m' -l'\n' -Q $(pacman -Qq) | sort -rhk 2 | less"
 alias pipinst="pip install --user"
 alias down='aria2c --conf-path=${HOME}/.dotfiles/aria2.conf'
+alias steam-tum='env http_proxy=http://proxy.in.tum.de steam'
+alias pacrm="sudo pacman -Rnss"
+alias arduino="sudo stty -F /dev/ttyUSB0 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts"
+alias backup-full="sudo rsync -rtAXS --info=progress2 --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/swapfile","/home/*/.thumbnails/*","/home/*/.cache/mozilla/*","/home/*/.cache/chromium/*","/home/*/.local/share/Trash/*","/home/*/.gvfs"} /* /run/media/snowdragon/Goofy/backup/vostro-full"
+alias etcshit="sudo etckeeper commit -d /etc/"
 
 #Aliases for colored output
 alias ls="ls --color=auto"
 alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg="dmesg --color"
-alias pacrm="sudo pacman -Rnss"
-alias arduino="sudo stty -F /dev/ttyUSB0 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts"
 
 #python virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
