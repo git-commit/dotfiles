@@ -1,4 +1,6 @@
-export PATH=$PATH:/home/snowdragon/.dotfiles/bin/:/home/snowdragon/Programs/shell/:/home/snowdragon/.gem/ruby/2.2.0/bin:/home/snowdragon/.local/bin/:/home/snowdragon/.gem/ruby/2.3.0/bin
+DOTFILES_REPO_PATH="${HOME}/.dotfiles"
+
+export PATH=$PATH:$DOTFILES_REPO_PATH/bin/:/home/snowdragon/Programs/shell/:/home/snowdragon/.gem/ruby/2.2.0/bin:/home/snowdragon/.local/bin/:/home/snowdragon/.gem/ruby/2.3.0/bin
 export EDITOR="vim"
 export VISUAL="vim"
 export BROWSER="chromium"
@@ -39,9 +41,6 @@ alias dmesg="dmesg --color"
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/bin/virtualenvwrapper.sh
-
-#Archey
-#archey
 
 # Use npm without sudo
 # https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
